@@ -1,24 +1,36 @@
-const font = "6x8";
-const timeFontSize = 4;
-const dateFontSize = 3;
+const font          = "6x8";
+const timeFontSize  = 4;
+const dateFontSize  = 3;
 const smallFontSize = 2;
-const yOffset = 23;
-const xyCenter = g.getWidth()/2;
-const cornerSize = 14;
-const cornerOffset = 3;
-const borderWidth = 1;
-const yposTime = 27+yOffset;
-const yposDate = 65+yOffset;
+const yOffset       = 23;
+const xyCenter      = g.getWidth()/2;
+const cornerSize    = 14;
+const cornerOffset  = 3;
+const borderWidth   = 1;
+const yposTime      = 27+yOffset;
+const yposDate      = 65+yOffset;
 
-const mainColor = "#26dafd";
-const mainColorDark = "#029dbb";
+const mainColor      = "#26dafd";
+const mainColorDark  = "#029dbb";
 const mainColorLight = "#8bebfe";
 
+const secondaryColor      = "#df9527";
+const secondaryColorDark  = "#8b5c15";
+const secondaryColorLight = "#ecc180";
+
+const success        = "#00ff00";
+const successDark        = "#090";
+const successLight        = "#6f6";
+
+const alert          = "#ff0000";
+const alertDark          = "#900";
+const alertLight          = "#f66";
+
 const levelColor = (l) => {
-  if (Bangle.isCharging()) return 0x07E0; // "Green"
-  if (l >= 50) return 0x05E0; // slightly darker green
-  if (l >= 15) return 0xFD20; // "Orange"
-  return 0xF800; // "Red"
+  if (Bangle.isCharging()) return success; // "Green"
+  if (l >= 50) return successDark; // slightly darker green
+  if (l >= 15) return secondaryColor; // "Orange"
+  return alert; // "Red"
 };
 
 function drawTopLeftCorner(x,y) {
@@ -112,14 +124,15 @@ function drawDateText() {
   g.drawString(`${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}`, xyCenter, yposDate, true);
 }
 
+
 function drawBattery(x1,y1,x2,y2) {
   const l = E.getBattery(), c = levelColor(l);
-  g.setColor(-1);
-  g.fillRect(x1,y1+2,x2-6,y2-2);
-  g.clearRect(x1+2,y1+4,x2-2,y2-4);
+  g.setColor(mainColorLight);
+  g.fillRect(x1,y1+2,x2-3,y2-2);
+  g.clearRect(x1+2,y1+4,x2-5,y2-4);
   g.fillRect(x2-3,y1+10,x2,y2-10);
   g.setColor(c).fillRect(x1+4,y1+6,x1+4+l*((x2-x1)/100),y2-6);
-  g.setColor(-1);
+  g.setColor(mainColorLight);
 }
 
 function drawClock() {
@@ -131,7 +144,7 @@ function drawClock() {
   drawTopFrame(28,46+yOffset,212,46+yOffset+35);
 
   drawBottomFrame(28,g.getHeight()-38,212,g.getHeight()-3);
-  drawBattery(31,g.getHeight()-36,g.getWidth()-31,g.getHeight()-6);
+  drawBattery(29,g.getHeight()-37,211,g.getHeight()-2);
 
   // texts
   drawTimeText();
