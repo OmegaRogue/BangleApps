@@ -127,11 +127,7 @@ function drawDateText() {
 
 function drawBattery(x1,y1,x2,y2) {
   const l = E.getBattery(), c = levelColor(l);
-  g.setColor(mainColorLight);
-  g.fillRect(x1,y1+2,x2-3,y2-2);
-  g.clearRect(x1+2,y1+4,x2-5,y2-4);
-  g.fillRect(x2-3,y1+10,x2,y2-10);
-  g.setColor(c).fillRect(x1+4,y1+6,x1+4+l*((x2-x1)/100),y2-6);
+  g.setColor(c).fillRect(x1,y1,x1+l*((x2-x1)/100),y2);
   g.setColor(mainColorLight);
 }
 
