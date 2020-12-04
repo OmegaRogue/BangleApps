@@ -88,12 +88,19 @@ body {
     background: var(--color-main-background) !important;
     color: var(--color-main-text) !important;
 }
-button {
+button.input-group-btn {
     background-color: var(--color-background-dark) !important;
     border: 1px solid var(--color-border-dark) !important;
     color: var(--color-main-text) !important;
 
 }
+.btn {
+    background-color: var(--color-background-dark) !important;
+    border: 1px solid var(--color-border-dark) !important;
+    color: var(--color-main-text) !important;
+
+}
+
 .tab-item {
     color: var(--color-main-text) !important;
 }
