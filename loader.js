@@ -13,8 +13,5 @@ if (window.location.host=="banglejs.com") {
 
 var APP_SOURCECODE_URL;
 (function() {
-  let username = "espruino";
-  let githubMatch = window.location.href.match(/\/(\w+)\.github\.io/);
-  if (githubMatch) username = githubMatch[1];
-  APP_SOURCECODE_URL = `https://github.com/${username}/BangleApps/tree/master/apps`;
+  APP_SOURCECODE_URL = "https://github.com/OmegaVoid/BangleApps/tree/master/apps";
 })();
