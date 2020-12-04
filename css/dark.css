@@ -107,6 +107,9 @@ body {
 .tab-item.active a{
     color: var(--color-main-text) !important;
 }
+.bg-gray {
+    background-color: var(--color-background-dark) !important;
+}
 
 .chip {
     background-color: var(--color-background-dark) !important;
