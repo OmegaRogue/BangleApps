@@ -94,7 +94,7 @@ button.input-group-btn {
     color: var(--color-main-text) !important;
 
 }
-.btn {
+#connectmydevice {
     background-color: var(--color-background-dark) !important;
     border: 1px solid var(--color-border-dark) !important;
     color: var(--color-main-text) !important;
