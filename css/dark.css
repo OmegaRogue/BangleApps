@@ -108,7 +108,7 @@ body {
     color: var(--color-main-text) !important;
 }
 .bg-gray {
-    background-color: var(--color-background-dark) !important;
+    background: var(--color-background-dark) !important;
 }
 
 .chip {
