@@ -108,10 +108,17 @@ body {
     color: var(--color-main-text) !important;
 
 }
-.active {
+.chip.active {
     background-color: var(--color-primary-element) !important;
 }
 .form-input {
     background-color: var(--color-background-darker) !important;
     color: var(--color-main-text) !important;
+}
+.modal-overlay {
+    background-color: var(--color-background-translucent) !important;
+}
+
+.modal-container {
+    background-color: var(--color-background-darker) !important;
 }
