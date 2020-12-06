@@ -122,3 +122,7 @@ body {
 .modal-container {
     background-color: var(--color-background-darker) !important;
 }
+
+.modal-header,.btn-clear {
+    color: var(--color-primary-text) !important;
+}
