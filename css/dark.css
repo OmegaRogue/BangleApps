@@ -1,0 +1,129 @@
+:root {
+    --color-paper-white: rgba(252, 252, 252, 1);
+    --color-cardboard-gray: rgba(239, 240, 241, 1);
+    --color-icon-gray: rgba(77, 77, 77, 1);
+    --color-charcoal-gray: rgba(49, 54, 59, 1);
+    --color-shade-black: rgba(35, 38, 41, 1);
+    --color-plasma-blue: rgba(61, 174, 233, 1);
+    --color-icon-red: rgba(218, 68, 83, 1);
+    --color-danger-red: rgba(237, 21, 21, 1);
+    --color-beware-orange: rgba(246, 116, 0, 1);
+    --color-icon-yellow: rgba(253, 188, 75, 1);
+    --color-sunbeam-yellow: rgba(201, 206, 59, 1);
+    --color-verdant-green: rgba(17, 209, 22, 1);
+    --color-icon-blue: rgba(29, 153, 243, 1);
+    --color-noble-fir: rgba(39, 174, 96, 1);
+    --color-abyss-blue: rgba(41, 128, 185, 1);
+    --color-coastal-fog: rgba(127, 140, 141, 1);
+    --color-alternate-gray: rgba(189, 195, 199, 1);
+    --color-hover-blue: rgba(61, 174, 233, 0.4);
+    --color-border-grey: rgba(103, 107, 110, 1);
+    --color-dashboard-grey: rgba(49, 54, 59, 0.8);
+    --color-main-text: var(--color-cardboard-gray) !important;
+    --color-main-background: var(--color-charcoal-gray) !important;
+    --color-main-background-translucent: var(--color-main-background) !important;
+    --color-background-hover: var(--color-hover-blue) !important;
+    --color-background-dark: var(--color-main-background) !important;
+    --color-background-darker: var(--color-shade-black) !important;
+    --color-background-translucent: var(--color-dashboard-grey) !important;
+    --color-primary: var(--color-plasma-blue) !important;
+    --color-primary-light: var(--color-primary) !important;
+    --color-primary-text: var(--color-paper-white) !important;
+    --color-primary-text-dark: var(--color-main-text) !important;
+    --color-primary-element: var(--color-primary) !important;
+    --color-primary-element-light: var(--color-primary) !important;
+    --color-error: var(--color-icon-red) !important;
+    --color-warning: var(--color-beware-orange) !important;
+    --color-neutral: var(--color-sunbeam-yellow) !important;
+    --color-success: var(--color-noble-fir) !important;
+    --color-text-maxcontrast: var(--color-alternate-gray) !important;
+    --color-text-light: var(--color-main-text) !important;
+    --color-text-lighter: var(--color-text-maxcontrast) !important;
+    --color-text-dark: rgba(0, 0, 0, 1) !important;
+    --color-loading-light: var(--color-alternate-gray) !important;
+    --color-loading-dark: var(--color-coastal-fog) !important;
+    --color-box-shadow: rgba(0, 0, 0, 0) !important;
+    --color-border: var(--color-border-grey) !important;
+    --color-border-dark: var(--color-border) !important;
+    --color-icon: rgba(242, 242, 242, 1);
+}
+
+
+.navbar { background-color: var(--color-background-darker); padding: 0.5em 1em 0.5em 1em; }
+.navbar .navbar-brand {
+    color: var(--color-main-text);
+    font-weight: bold;
+}
+.avatar img {
+    border-radius: 5px 5px 5px 5px;
+    background: var(--color-main-text);
+}
+#toastcontainer {
+    position:fixed;
+    bottom:8px;left:0px;right:0px;
+    z-index: 100;
+}
+.hero {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align:center;
+}
+.chip {
+    cursor: pointer;
+}
+.filter-nav {
+    display: inline-block;
+}
+.sort-nav {
+    float: right;
+}
+.tile-content { position: relative; }
+.link-github {
+    position:absolute;
+    top: 36px;
+    left: -24px;
+}
+
+body {
+    background: var(--color-main-background) !important;
+    color: var(--color-main-text) !important;
+}
+.input-group-btn, button.btn.refresh ,#settime, #removeall, #installdefault, #installfavourite, #connectmydevice, #defaultsettings {
+    background-color: var(--color-background-dark) !important;
+    border: 1px solid var(--color-border-dark) !important;
+    color: var(--color-main-text) !important;
+
+}
+
+.tab-item, .tab-item.active a {
+    color: var(--color-main-text) !important;
+}
+.bg-gray {
+    background: var(--color-background-dark) !important;
+}
+
+.chip {
+    background-color: var(--color-background-dark) !important;
+    border: 1px solid var(--color-border-dark) !important;
+    color: var(--color-main-text) !important;
+
+}
+.chip.active,.tab-item.active {
+    background-color: var(--color-primary-element) !important;
+}
+.form-input {
+    background-color: var(--color-background-darker) !important;
+    color: var(--color-main-text) !important;
+}
+.modal-overlay {
+    background-color: var(--color-background-translucent) !important;
+}
+
+.modal-container {
+    background-color: var(--color-background-darker) !important;
+    color: var(--color-main-text) !important;
+}
+
+.modal-container .modal-header,.btn-clear {
+    color: var(--color-primary-text) !important;
+}
