@@ -108,7 +108,7 @@ body {
     color: var(--color-main-text) !important;
 
 }
-.chip.active {
+.chip.active,.tab-item.active {
     background-color: var(--color-primary-element) !important;
 }
 .form-input {
