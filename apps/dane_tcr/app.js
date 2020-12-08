@@ -1,4 +1,4 @@
-var d = require("dane_arwes");
+var d = require("https://raw.githubusercontent.com/OmegaVoid/EspruinoDocs/master/modules/dane_arwes.js");
 var Arwes = d.default();
 
 const yOffset = 23;
