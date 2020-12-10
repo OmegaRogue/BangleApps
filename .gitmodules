@@ -1,3 +1,4 @@
 [submodule "EspruinoAppLoaderCore"]
 	path = core
 	url = https://github.com/espruino/EspruinoAppLoaderCore.git
+	branch = master
